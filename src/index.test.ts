@@ -1,17 +1,26 @@
-import { expect, test } from "@jest/globals"
-import { execFileSync } from "child_process"
-import { join } from "path"
-import { cwd, execPath } from "process"
+import { beforeEach, expect, test } from "@jest/globals"
+import { renderHook } from "@testing-library/react"
 
-import { life } from "~index"
+import { getHashKeyPairs, hasher, useHashedState } from "."
 
-const indexScript = join(cwd(), "dist", "index.js")
-
-test("life is good", async () => {
-  expect(life).toBe(42)
+beforeEach(() => {
+  localStorage.clear()
 })
 
-test("snapshot corrects", async () => {
-  const output = execFileSync(execPath, [indexScript]).toString("utf-8")
-  expect(output).toMatchSnapshot()
+test("stores an object key ", () => {
+  const key = {
+    hello: 1,
+    world: 2
+  }
+
+  const value = "hello world"
+
+  const valueHash = hasher.hash(value)
+
+  const [hashKey, valueKey] = getHashKeyPairs(key)
+
+  renderHook(() => useHashedState(key, value))
+
+  expect(localStorage.getItem(hashKey)).toBe(JSON.stringify(valueHash))
+  expect(localStorage.getItem(valueKey)).toBe(JSON.stringify(value))
 })

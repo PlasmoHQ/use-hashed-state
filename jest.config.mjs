@@ -4,6 +4,7 @@
 
 const config = {
   clearMocks: true,
+  testEnvironment: "jsdom",
   moduleFileExtensions: ["js", "ts"],
   testMatch: ["**/*.test.ts"],
   transform: {
