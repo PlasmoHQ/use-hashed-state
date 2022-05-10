@@ -17,7 +17,7 @@
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
     "prepublishOnly": "run-s build"
   },
-  "author": "Plasmo Corp. <support@plasmo.com>",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/plasmo-corp/use-hashed-state.git"
@@ -48,7 +48,7 @@
     "jest-environment-jsdom": "28.1.0",
     "prettier": "2.6.2",
     "rimraf": "3.0.2",
-    "ts-jest": "^28.0.1",
+    "ts-jest": "^28.0.2",
     "tsup": "5.12.7",
     "typescript": "4.6.4"
   }
