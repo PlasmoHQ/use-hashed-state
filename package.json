@@ -20,7 +20,7 @@
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/plasmo-corp/use-hashed-state.git"
+    "url": "https://github.com/PlasmoHQ/use-hashed-state.git"
   },
   "license": "MIT",
   "keywords": [
