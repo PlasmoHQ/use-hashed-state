@@ -9,6 +9,8 @@ The library is a typescript fork of [use-persisted-state-hook](https://github.co
 The `Check` component below is capable of having a state simply based on the content of its children - it is fully independent.
 
 ```tsx
+import { useHashedState } from "use-hashed-state"
+
 const Check = ({ children = "" as ReactNode }) => {
   const [checked, setChecked] = useHashedState<boolean>(
     children,
