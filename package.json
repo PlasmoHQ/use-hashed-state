@@ -42,7 +42,7 @@
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@plasmohq/storage": "workspace:*",
     "@testing-library/react": "13.3.0",
-    "@types/node": "18.7.6",
+    "@types/node": "18.7.8",
     "@types/react": "18.0.17",
     "cross-env": "7.0.3",
     "jest": "28.1.3",
