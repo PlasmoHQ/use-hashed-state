@@ -12,7 +12,7 @@ const config = {
   },
   verbose: true,
   moduleNameMapper: {
-    "^~(.*)$": "<rootDir>/dist/$1"
+    "^~(.*)$": "<rootDir>/src/$1"
   }
 }
 export default config
