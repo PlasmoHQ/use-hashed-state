@@ -51,4 +51,4 @@ const Container = () => (
 
 ## License
 
-[MIT](./license) 🖖 [Plasmo Corp.](https://plasmo.com)
+[MIT](./LICENSE) 🖖 [Plasmo Corp.](https://plasmo.com)
