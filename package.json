@@ -1,6 +1,6 @@
 {
   "name": "use-hashed-state",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "Safely store data in localstorage with an unique key of any type, even a component",
   "type": "module",
   "main": "./dist/index.js",
