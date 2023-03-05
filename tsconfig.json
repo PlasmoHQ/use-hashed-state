@@ -19,7 +19,7 @@
     "module": "ESNext",
     "target": "es6",
     "allowJs": true,
-    "verbatimModuleSyntax": true
+    "importsNotUsedAsValues": "error"
   },
   "include": ["src/**/*.ts"]
 }
