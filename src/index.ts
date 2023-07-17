@@ -1,5 +1,5 @@
 import { hasher as createHash } from "node-object-hash"
-import { type Dispatch, type SetStateAction, useEffect, useState } from "react"
+import { useEffect, useState, type Dispatch, type SetStateAction } from "react"
 
 export const DEFAULT_PREFIX = "__use_hashed_state_hook"
 
